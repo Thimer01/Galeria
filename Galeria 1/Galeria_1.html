@@ -27,7 +27,7 @@
                 <img src="./Recursos Galeria 1/images-removebg-preview.png" alt=""> 
                 <h2> Caja Libro</h2>
                 <button id="bOton_Info" class="Ver"> ℹ️ Info</button>
-                <div id="Mostrar" class="Oculto">
+                <div id="mostrar" class="Oculto">
                     <p> Frase</p>
                 </div>
             </div>
@@ -35,7 +35,7 @@
                 <img src="" alt=""> 
                 <h2></h2>
                 <button id="buton_Info" class="Ver"> ℹ️ Info</button>
-                <div id="Mostrar" class="Oculto">
+                <div id="Mustrar" class="Oculto">
                     <p> Frase</p>
                 </div>
             </div>
@@ -57,7 +57,7 @@
         });
 
         document.getElementById('bOton_Info').addEventListener('click', function() {
-            let mostrar = document.getElementById('Mostrar');
+            let mostrar = document.getElementById('mostrar');
             if (mostrar.classList.contains('Oculto')){
                 mostrar.classList.remove('Oculto');
                 this.textContent = 'Ver Menos';
@@ -68,7 +68,7 @@
         });
 
         document.getElementById('buton_Info').addEventListener('click', function() {
-            let mostrar = document.getElementById('Mostrar');
+            let mostrar = document.getElementById('Mustrar');
             if (mostrar.classList.contains('Oculto')){
                 mostrar.classList.remove('Oculto');
                 this.textContent = 'Ver Menos';
