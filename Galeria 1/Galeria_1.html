@@ -18,7 +18,7 @@
             <div class="Cards">
                 <img src="./Recursos Galeria 1/cartonaje-5-1-removebg-preview.png" alt=""> 
                 <h2> Libreta</h2>
-                <button id="Boton_Info" class="Ver"> ℹ️ Info</button>
+                <button id="BoTon_Info" class="Ver"> ℹ️ Info</button>
                 <div id="Mostrar" class="Oculto">
                     <p> Frase</p>
                 </div>
@@ -26,7 +26,7 @@
             <div class="Cards">
                 <img src="./Recursos Galeria 1/images-removebg-preview.png" alt=""> 
                 <h2> Caja Libro</h2>
-                <button id="Boton_Info" class="Ver"> ℹ️ Info</button>
+                <button id="bOton_Info" class="Ver"> ℹ️ Info</button>
                 <div id="Mostrar" class="Oculto">
                     <p> Frase</p>
                 </div>
@@ -34,7 +34,7 @@
             <div class="Cards">
                 <img src="" alt=""> 
                 <h2></h2>
-                <button id="Boton_Info" class="Ver"> ℹ️ Info</button>
+                <button id="buton_Info" class="Ver"> ℹ️ Info</button>
                 <div id="Mostrar" class="Oculto">
                     <p> Frase</p>
                 </div>
@@ -44,5 +44,39 @@
     <footer>
         © Diseño Web: Thiago Mercé <a href="https://wa.me/+5493464541796"> <img class="Iconos" src="../Recursos/Iconos/whatsapp-symbol-logo-svgrepo-com.svg" alt=""> </a>
     </footer>
+    <script>
+        document.getElementById('BoTon_Info').addEventListener('click', function() {
+            let mostrar = document.getElementById('Mostrar');
+            if (mostrar.classList.contains('Oculto')){
+                mostrar.classList.remove('Oculto');
+                this.textContent = 'Ver Menos';
+            } else{
+                mostrar.classList.add('Oculto');
+                this.textContent = 'ℹ️ Info';
+            }
+        });
+
+        document.getElementById('bOton_Info').addEventListener('click', function() {
+            let mostrar = document.getElementById('Mostrar');
+            if (mostrar.classList.contains('Oculto')){
+                mostrar.classList.remove('Oculto');
+                this.textContent = 'Ver Menos';
+            } else{
+                mostrar.classList.add('Oculto');
+                this.textContent = 'ℹ️ Info';
+            }
+        });
+
+        document.getElementById('buton_Info').addEventListener('click', function() {
+            let mostrar = document.getElementById('Mostrar');
+            if (mostrar.classList.contains('Oculto')){
+                mostrar.classList.remove('Oculto');
+                this.textContent = 'Ver Menos';
+            } else{
+                mostrar.classList.add('Oculto');
+                this.textContent = 'ℹ️ Info';
+            }
+        });
+    </script>
 </body>
 </html>

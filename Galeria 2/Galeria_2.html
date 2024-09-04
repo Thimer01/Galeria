@@ -26,7 +26,7 @@
             <div class="Cards">
                 <img src="./Recursos Galeria 2/680f13b857d8c1f9476491554de9140a.jpg" alt=""> 
                 <h2> Libreta</h2>
-                <button id="Boton_Info" class="Ver"> ℹ️ Info</button>
+                <button id="boton_Info" class="Ver"> ℹ️ Info</button>
                 <div id="Mostrar" class="Oculto">
                     <p> Frase</p>
                 </div>
@@ -34,7 +34,7 @@
             <div class="Cards">
                 <img src="" alt=""> 
                 <h2></h2>
-                <button id="Boton_Info" class="Ver"> ℹ️ Info</button>
+                <button id="Buton_Info" class="Ver"> ℹ️ Info</button>
                 <div id="Mostrar" class="Oculto">
                     <p> Frase</p>
                 </div>
@@ -46,6 +46,28 @@
     </footer>
     <script>
         document.getElementById('Boton_Info').addEventListener('click', function() {
+            let mostrar = document.getElementById('Mostrar');
+            if (mostrar.classList.contains('Oculto')){
+                mostrar.classList.remove('Oculto');
+                this.textContent = 'Ver Menos';
+            } else{
+                mostrar.classList.add('Oculto');
+                this.textContent = 'ℹ️ Info';
+            }
+        });
+
+        document.getElementById('boton_Info').addEventListener('click', function() {
+            let mostrar = document.getElementById('Mostrar');
+            if (mostrar.classList.contains('Oculto')){
+                mostrar.classList.remove('Oculto');
+                this.textContent = 'Ver Menos';
+            } else{
+                mostrar.classList.add('Oculto');
+                this.textContent = 'ℹ️ Info';
+            }
+        });
+
+        document.getElementById('Buton_Info').addEventListener('click', function() {
             let mostrar = document.getElementById('Mostrar');
             if (mostrar.classList.contains('Oculto')){
                 mostrar.classList.remove('Oculto');
