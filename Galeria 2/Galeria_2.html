@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <li class="Thi_Li"> <a class="A_Li" href="../index.html"> Inicio </a></li>
+        <li class="Thi_Li"> <a class="A_Li" href="../Galeria 1/Galeria_1.html"> Cartonaje </a> </li>
+        <li class="Thi_Li"> <a class="A_Li" href="../Sobre mi/Sobre_mi.html"> Quienes Somos </a> </li>
+        <li class="Thi_Li"> <a class="A_Li" href="../Contactanos/contactanos.html"> Contactanos </a> </li>
+    </header>
+    <main>
+        <div class="Carrusel">
+            <div class="Cards">
+                <img src="./Recursos Galeria 2/images.jpg" alt=""> 
+                <h2> Personajes</h2>
+                <div class="Oculto">
+                    <p></p>
+                </div>
+            </div>
+            <div class="Cards">
+                <img src="./Recursos Galeria 2/680f13b857d8c1f9476491554de9140a.jpg" alt=""> 
+                <h2> Libreta</h2>
+                <button id="Boton_Info" class="Ver"> ℹ️ Info</button>
+                <div id="Mostrar" class="Oculto">
+                    <p> Frase</p>
+                </div>
+            </div>
+            <div class="Cards">
+                <img src="" alt=""> 
+                <h2></h2>
+                <div class="Oculto">
+                    <p></p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        © Diseño Web: Thiago Mercé <a href="https://wa.me/+5493464541796"> <img class="Iconos" src="../Recursos/Iconos/whatsapp-symbol-logo-svgrepo-com.svg" alt=""> </a>
+    </footer>
+    <script>
+        document.getElementById('Boton_Info').addEventListener('click', function() {
+            let mostrar = document.getElementById('Mostrar');
+            if (mostrar.classList.contains('Oculto')){
+                mostrar.classList.remove('Oculto');
+                this.textContent = 'Ver Menos';
+            } else{
+                mostrar.classList.add('Oculto');
+                this.textContent = 'ℹ️ Info';
+            }
+        });
+    </script>
+</body>
+</html>

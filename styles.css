@@ -1,0 +1,213 @@
+/* body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  margin: 0;
+  background-image: url(./Recursos/Imagenes/IMG-20240330-WA0012.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+footer{
+  background-color: red;
+  height: 30px;
+} */
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+  /* background-image: url(./Recursos/Imagenes/IMG-20240330-WA0012.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat; */
+}
+
+main {
+  flex: 1; /* Esto hace que main ocupe el espacio disponible */
+  background-color: #1b1b1b;
+}
+
+footer {
+  background-color: #1b1b1b;
+  height: 30px;
+  width: 100%;
+  text-align: center;
+  color: white;
+  padding-bottom: 50px;
+}
+
+.contenedor{
+  display: flex;
+  justify-content: center;
+  padding: 10%;
+}
+
+.cartel {
+  position: relative;
+  width: 300px;
+  height: 150px;
+}
+
+.frontal, .superior, .lateral {
+  position: absolute;
+  background-color: #2d2d2d;
+  border: 5px solid #00ffcc;
+  color: #00ffcc;
+  box-shadow: 0 0 10px #00ffcc;
+}
+
+.colgante:hover, .superior:hover, .lateral:hover {
+  background-color: #4e4c4c; 
+  box-shadow: 0 0 15px #ff00ff; 
+}
+
+.frontal {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 40px;
+}
+
+.superior {
+  width: 100%;
+  height: 50px;
+  top: -55px;
+  left: -1px;
+  transform-origin: bottom;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: skewX(310deg);
+  font-size: 30px;
+}
+
+.lateral {
+  width: 58px;
+  height: 100%;
+  right: -77px;
+  top: 0;
+  transform-origin: left;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: skewY(320deg);
+  font-size: 30px;
+}
+
+.carteles-colgantes {
+  position: absolute;
+  bottom: -100px;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.colgante {
+  width: 100px;
+  height: 30px;
+  background-color: #1b1b1b;
+  border: 3px solid #00ffcc;
+  color: #00ffcc;
+  text-align: center;
+  line-height: 30px;
+  box-shadow: 0 0 10px #00ffcc;
+  font-size: 25px;
+}
+
+.a_ind{
+  text-decoration: none;
+  color: rgb(255, 240, 252);
+  /* font-size: 25px; */
+}
+
+.vertical-text {
+  display: inline-block;
+  transform: rotate(90deg);
+}
+
+.Logo{
+  position: absolute;
+  display: flex;
+  align-content: center;
+
+}
+.Logo img{
+  border-radius: 50%;
+  height: 300px;
+
+}
+.Thi_Lab{
+  display: flex;
+  flex-direction: column;
+}
+.Con_Main{
+  color:#00ffcc;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column; /* Agregado para centrar los elementos verticalmente */
+  height: 100%; /* Asegura que el contenedor ocupe el alto completo de main */
+}
+header{
+  display: flex;
+  justify-content: space-around;
+  background-color:#4e4c4c;
+  text-align: center;
+}
+.Thi_Li{
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: inline-block;
+  -webkit-box-flex: 1 1 auto;
+  -webkit-flex: 1 1 auto;
+  flex: 1 1 auto;
+  vertical-align: middle;
+  white-space: nowrap;
+  padding: 15px;
+  font-size: 20px;
+}
+form{
+  width: 50%;
+  max-width: 500px; /* Esto asegura que el formulario no sea demasiado ancho */
+  margin: 0 auto; /* Centra el formulario horizontalmente */
+  background-color: #2d2d2d; /* Opcional: color de fondo para el formulario */
+  padding: 20px; /* Opcional: espaciado interno */
+  border-radius: 10px; /* Opcional: bordes redondeados */
+}
+.A_Li{
+  color:mintcream ;
+}
+.Iconos{
+  width: 20px;
+  padding-left: 20px;
+}
+.Carrusel{
+  display: flex;
+  justify-content: space-around;
+  align-content: center;
+}
+.Cards img{
+  width: 300px;
+}
+.Cards{
+  border: 5px solid #00ffcc;
+  color: white;
+  text-align: center;
+}
+.Quien{
+  color: white;
+  font-size: 20px;
+  margin-left: 10px;
+}
+.Oculto{
+  display: none;
+}
