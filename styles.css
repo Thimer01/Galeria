@@ -211,3 +211,12 @@ form{
 .Oculto{
   display: none;
 }
+.Main_SM{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.Main_SM img{
+  width: 500px;
+}
