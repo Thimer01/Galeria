@@ -17,7 +17,7 @@
     
     <main class="Con_Main">
         <div class="contenedor">
-            <form> 
+            <form id="TM_Form"> 
                 <div class="Lab_Nom Thi_Lab">
                     <label for="Nombre"> Nombre </label>
                     <input type="text" id="Nombre">
@@ -34,7 +34,7 @@
                     <label for="Consulta"> Consulta </label>
                     <textarea id="Consulta"></textarea>
                 </div>
-                <button type="submit">Enviar</button>
+                <button id="Enviar" type="submit">Enviar</button>
             </form>
         </div>
     </main>
@@ -42,5 +42,24 @@
     <footer>
         © Diseño Web: Thiago Mercé <a href="https://wa.me/+5493464541796"> <img class="Iconos" src="../Recursos/Iconos/whatsapp-symbol-logo-svgrepo-com.svg" alt=""> </a>
     </footer>
+    <script>
+        document.getElementById('TM_Form').addEventListener('submit', function(event) {
+    // Obtén los valores de los campos
+    const nombre = document.getElementById('Nombre').value.trim();
+    const apellido = document.getElementById('Apellido').value.trim();
+    const correo = document.getElementById('Correo_Electrónico').value.trim();
+    const consulta = document.getElementById('Consulta').value.trim();
+
+    // Verifica si algún campo está vacío
+    if (nombre === '' || apellido ==='' || correo === '' || consulta === '') {
+        // Muestra una alerta
+        alert('Por favor, completa todos los campos antes de enviar.');
+
+        // Previene el envío del formulario
+        event.preventDefault();
+    }
+});
+
+    </script>
 </body>
 </html>
