@@ -10,34 +10,54 @@
     <header>
         <li class="Thi_Li"> <a class="A_Li" href="../index.html"> Inicio </a></li>
         <li class="Thi_Li"> <a class="A_Li" href="../Sobre mi/Sobre_mi.html"> Quienes Somos </a> </li>
-        <li class="Thi_Li"> <a class="A_Li" href="../Galeria 2/Galeria_2.html"> Bordado </a></li>
         <li class="Thi_Li"> <a class="A_Li" href="../Contactanos/contactanos.html"> Contactanos </a> </li>
+        <li class="Thi_Li"> <a class="A_Li" href="../Galeria 2/Galeria_2.html"> Bordado </a></li>
         <li class="Thi_Li"> <a class="A_Li" href="../Galeria 3/Galeria_3.html"> Macramé </a> </li>
     </header>
     <main>
         <div class="Carrusel">
             <div class="Cards">
-                <img src="./Recursos Galeria 1/cartonaje-5-1-removebg-preview.png" alt=""> 
-                <h2> Libreta</h2>
+                <img src="./Recursos Galeria 1/IMG-20240918-WA0035.jpg" alt="Porta_Celular"> 
+                <h2> Porta Celular</h2>
                 <button id="BoTon_Info" class="Ver"> ℹ️ Info</button>
                 <div id="Mostrar" class="Oculto">
-                    <p> Frase</p>
+                    <p> Realizado en cartón y tela... Ideal para mirar tus redes, películas, series, etc sin tener todo el tiempo el celular en las manos... También para ponerlo a cargar... Se realizan personalizados... Consultanos.</p>
+                    <img src="./Recursos Galeria 1/IMG-20240918-WA0036.jpg" alt="Porta_Celular">
+                    <img src="./Recursos Galeria 1/IMG-20240918-WA0034.jpg" alt="">
                 </div>
             </div>
             <div class="Cards">
-                <img src="./Recursos Galeria 1/images-removebg-preview.png" alt=""> 
-                <h2> Caja Libro Mediana</h2>
+                <img src="./Recursos Galeria 1/IMG-20240528-WA0067.jpg" alt=""> 
+                <h2> Porta Agujas</h2>
                 <button id="bOton_Info" class="Ver"> ℹ️ Info</button>
                 <div id="mostrar" class="Oculto">
-                    <p> Frase</p>
+                    <p> Una solución práctica para no perder las agujas o llevarlas donde necesites.</p>
                 </div>
             </div>
             <div class="Cards">
                 <img src="./Recursos Galeria 1/IMG-20240911-WA0028.jpg" alt=""> 
-                <h2> Caja Libro Grande</h2>
+                <h2> Caja Libro</h2>
                 <button id="buton_Info" class="Ver"> ℹ️ Info</button>
                 <div id="Mustrar" class="Oculto">
-                    <p> Frase</p>
+                    <p> Realizada en cartón y tela... Guarda tus accesorios para el cabello, bijuo, etc... Se realizan del tamaño y color que desees, con o sin divisiones... Consultanos.</p>
+                </div>
+            </div>
+            <div class="Cards">
+                <img src="./Recursos Galeria 1/IMG-20240918-WA0033.jpg" alt=""> 
+                <h2> Porta Post-It</h2>
+                <button id="butn_Info" class="Ver"> ℹ️ Info</button>
+                <div id="Mustra" class="Oculto">
+                    <p> Libretas ideales para tenerlas siempre a mano y llevarlas donde quieras.</p>
+                </div>
+            </div>
+            <div class="Cards">
+                <img src="./Recursos Galeria 1/IMG-20240918-WA0038.jpg" alt=""> 
+                <h2> Mini Cajonera</h2>
+                <button id="btn_Info" class="Ver"> ℹ️ Info</button>
+                <div id="Mutra" class="Oculto">
+                    <p> Realizada en cartón y tela... Dos cajones para que guardes lo que más te guste... Consulta por colores y tela.</p>
+                    <img src="./Recursos Galeria 1/IMG-20240918-WA0039.jpg" alt="">
+                    <img src="./Recursos Galeria 1/IMG-20240918-WA0040.jpg" alt="">
                 </div>
             </div>
         </div>
@@ -70,6 +90,26 @@
 
         document.getElementById('buton_Info').addEventListener('click', function() {
             let mostrar = document.getElementById('Mustrar');
+            if (mostrar.classList.contains('Oculto')){
+                mostrar.classList.remove('Oculto');
+                this.textContent = 'Ver Menos';
+            } else{
+                mostrar.classList.add('Oculto');
+                this.textContent = 'ℹ️ Info';
+            }
+        });
+        document.getElementById('butn_Info').addEventListener('click', function() {
+            let mostrar = document.getElementById('Mustra');
+            if (mostrar.classList.contains('Oculto')){
+                mostrar.classList.remove('Oculto');
+                this.textContent = 'Ver Menos';
+            } else{
+                mostrar.classList.add('Oculto');
+                this.textContent = 'ℹ️ Info';
+            }
+        });
+        document.getElementById('btn_Info').addEventListener('click', function() {
+            let mostrar = document.getElementById('Mutra');
             if (mostrar.classList.contains('Oculto')){
                 mostrar.classList.remove('Oculto');
                 this.textContent = 'Ver Menos';

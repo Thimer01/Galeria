@@ -9,35 +9,50 @@
 <body>
     <header>
         <li class="Thi_Li"> <a class="A_Li" href="../index.html"> Inicio </a></li>
-        <li class="Thi_Li"> <a class="A_Li" href="../Galeria 1/Galeria_1.html"> Cartonaje </a> </li>
         <li class="Thi_Li"> <a class="A_Li" href="../Sobre mi/Sobre_mi.html"> Quienes Somos </a> </li>
         <li class="Thi_Li"> <a class="A_Li" href="../Contactanos/contactanos.html"> Contactanos </a> </li>
+        <li class="Thi_Li"> <a class="A_Li" href="../Galeria 1/Galeria_1.html"> Cartonaje </a> </li>
         <li class="Thi_Li"> <a class="A_Li" href="../Galeria 3/Galeria_3.html"> Macramé </a> </li>
     </header>
     <main>
         <div class="Carrusel">
             <div class="Cards">
-                <img src="./Recursos Galeria 2/images.jpg" alt=""> 
-                <h2> Personajes</h2>
+                <img src="./Recursos Galeria 2/IMG-20240918-WA0024.jpg" alt=""> 
+                <h2> Imagenes para Cuadros</h2>
                 <button id="Boton_Info" class="Ver"> ℹ️ Info</button>
                 <div id="MOstrar" class="Oculto">
-                    <p> Frase</p>
+                    <p> Tamaño A4. Decora tu casa con preciosas imágenes bordadas en papel... Diseños y colores a elección... Consulta catálogo.</p>
+                    <img src="./Recursos Galeria 2/IMG-20240918-WA0025.jpg" alt="">
                 </div>
             </div>
             <div class="Cards">
-                <img src="./Recursos Galeria 2/680f13b857d8c1f9476491554de9140a.jpg" alt=""> 
-                <h2> Libreta</h2>
+                <img src="./Recursos Galeria 2/IMG-20240918-WA0019.jpg" alt=""> 
+                <h2> Libreta A5</h2>
                 <button id="boton_Info" class="Ver"> ℹ️ Info</button>
                 <div id="mOstrar" class="Oculto">
-                    <p> Frase</p>
+                    <p> De 50 hojas. Realizado a mano... Tapa con bordado en papel a elección de colores y diseños.</p>
+                    <img src="./Recursos Galeria 2/IMG-20240918-WA0020.jpg" alt="">
+                    <img src="./Recursos Galeria 2/IMG-20240918-WA0021.jpg" alt="">
+                    <img src="./Recursos Galeria 2/IMG-20240918-WA0022.jpg" alt="">
+                    <img src="./Recursos Galeria 2/IMG-20240918-WA0023.jpg" alt="">
                 </div>
             </div>
             <div class="Cards">
-                <img src="" alt=""> 
-                <h2></h2>
+                <img src="./Recursos Galeria 2/IMG-20240918-WA0013.jpg" alt=""> 
+                <h2> Imanes para Heladera</h2>
                 <button id="Buton_Info" class="Ver"> ℹ️ Info</button>
                 <div id="MosTrar" class="Oculto">
-                    <p> Frase</p>
+                    <p> Bordados en papel llenos de color y diseño.</p>
+                    <img src="./Recursos Galeria 2/IMG-20240918-WA0014.jpg" alt="">
+                </div>
+            </div>
+            <div class="Cards">
+                <img src="./Recursos Galeria 2/IMG-20240918-WA0017.jpg" alt=""> 
+                <h2> Señaladores</h2>
+                <button id="Butn_Info" class="Ver"> ℹ️ Info</button>
+                <div id="MosTra" class="Oculto">
+                    <p> Realizados con la técnica de bordado en papel... Marcá la página de tu libro favorito con estos hermosos diseños.</p>
+                    <img src="./Recursos Galeria 2/IMG-20240918-WA0018.jpg" alt="">
                 </div>
             </div>
         </div>
@@ -70,6 +85,16 @@
 
         document.getElementById('Buton_Info').addEventListener('click', function() {
             let mostrar = document.getElementById('MosTrar');
+            if (mostrar.classList.contains('Oculto')){
+                mostrar.classList.remove('Oculto');
+                this.textContent = 'Ver Menos';
+            } else{
+                mostrar.classList.add('Oculto');
+                this.textContent = 'ℹ️ Info';
+            }
+        });
+        document.getElementById('Butn_Info').addEventListener('click', function() {
+            let mostrar = document.getElementById('MosTra');
             if (mostrar.classList.contains('Oculto')){
                 mostrar.classList.remove('Oculto');
                 this.textContent = 'Ver Menos';
